@@ -89,49 +89,40 @@
     }
 
     /* Hero Section */
-    .hero {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: linear-gradient(135deg, #0D0111, #0D0111);
-      position: relative;
-      overflow: hidden;
-    }
-    .hero .img{
-        height: 100vh;
-        width : 100vw;
-    }
-    
-    .hero::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      opacity: 0.2;
-      z-index: 1;
-    }
-
-    .hero-content {
-      z-index: 2;
-    }
-
-    .hero h1 {
-      font-family: 'marko one', cursive;
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
-
+    /* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero .img {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .hero-content {
+    z-index: 2;
+  }
+  
+  .hero h1 {
+    font-family: 'Marko One', cursive;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
     /* Feature Section */
     .features {
       background-color: #0D0111;
