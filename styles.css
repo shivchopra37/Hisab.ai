@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Marko+One&display=swap');
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Marko One', sans-serif;
+      background-color: #0D0111;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #C790F1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #C790F1;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    button {
+      background-color: #C790F1;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      background-color: #A367D4;
+      box-shadow: 0 0 10px #C790F1, 0 0 20px #C790F1;
+    }
+
+    /* Header */
+    header {
+      background-color: transparent;
+      padding: 20px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      transition: background-color 0.3s;
+    }
+
+    header.scrolled {
+      background-color: rgba(13, 1, 17, 0.9);
+    }
+
+    header h1 {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 2rem;
+      color: #C790F1;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      font-size: 1.1rem;
+      font-family: 'Marko One', sans-serif;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #0D0111, #0D0111);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero .img{
+        height: 100vh;
+        width : 100vw;
+    }
+    
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;
+      z-index: 1;
+    }
+
+    .hero-content {
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-family: 'marko one', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Feature Section */
+    .features {
+      background-color: #0D0111;
+      padding: 50px 0;
+      margin-top: 100px;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #C790F1;
+    }
+
+    .feature-cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .feature-card {
+      background-color: #0D0111;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      border: 2px solid #C790F1; /* Added purple border */
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 15px #C790F1, 0 0 30px #C790F1;
+    }
+
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #C790F1;
+    }
+
+    .feature-card p {
+      font-size: 1rem;
+    }
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .feature-cards {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
